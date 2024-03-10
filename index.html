@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="autocomplete/jquery-ui.css">
+        <link rel="stylesheet" href="autocomplete/jquery-ui.min.css">
+        <link rel="stylesheet" href="autocomplete/jquery-ui.structure.min.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <br>
+       <div class="container">
+        <input type="search" class="form control w-100" placeholder="enter your product" id="search" onkeyup="searchsection()">
+        <br>
+        <br>
+        <!-- <button class=" btn btn-success w-100" onclick="searchsection()">search</button> -->
+        <p class="error">
+            we could not find any data
+        </p>
+       </div>
+        <br>
+        <div class="container">
+          <div id="fansection">
+            <h1 style="text-align: center;">Fan Section</h1>
+            <hr>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                                <h4 class="card-title" id="productname">Fan 1</h4>
+                                <p class="card-text" id="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, facere</p>
+                                <p class="card-text" id="price">1500</p>
+                                <input type="number" placeholder="enter yor quantity" id="quantity">
+                                <br>
+                                <br>
+                                <button class="btn btn-success" onclick="addtocart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                             <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="celling fan5.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+            <div id="shoessection">
+                <h2 style="text-align: center;">shoessection</h2>
+                <hr>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="download.jpeg" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="autocomplete/jquery-ui.js"></script>
+        <script src="autocomplete/jquery-ui.min.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+// $('#fansection').hide()
+$('#shoessection').hide()
+$('.error').hide()
+var suggestion = ['fans','shoes','product 1']
+$('#search').autocomplete({
+    source :suggestion
+})
+function searchsection()
+{
+    var inp=$('#search').val()
+    if( inp.toLowerCase() == 'fans')
+    {
+         $('#fansection').show()
+         $('#shoessection').hide()
+         $('.error').hide()
+    }
+    else if(inp.toLowerCase() == 'shoes')
+    {
+        $('#fansection').hide()
+         $('#shoessection').show()
+         $('.error').hide()
+    }
+    else{
+         $('#fansection').hide()
+         $('#shoessection').hide()
+         $('.error').show()
+    }
+} 
+
+function addtocart()
+{
+    var productname = $('#name').text();
+   var price = parseInt$('#price');
+   var quantity = $('#quantity').val();
+   var  total = quantity*price;
+//    console.log(productname)
+//    console.log(price)
+//    console.log(quantity)
+//    console.log(quantity*price)
+
+//   creating object/Arry
+ var products = 
+ {
+    'productname': productname,
+    'price' : price,
+    'quantity' : quantity,
+    'total' :total
+ }
+ localStorage.setItem('Details',JSON.stringify(products))
+ } 
+        </script>
+    </body>
+</html>

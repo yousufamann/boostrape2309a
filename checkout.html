@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ol id="cartlist" style="background-color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;">
+        
+    </ol> -->
+    <table id="table"border="1px black" style="width: 60%;height: 60px;">
+        <tr>
+            <th>productname</th>
+            <th>Price</th>
+            <th>quantity</th>
+            <th>total</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td id="productname"></td>
+            <td id="Price"></td>
+            <td id="quantity"></td>
+            <td id="total"></td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        var cartitems = JSON.parse(localStorage.getItem('Details')) || []
+        var productname  = cartitems.productname;
+        var price = cartitems.price;
+        var quantity = cartitems.quantity;
+        var total = cartitems.total;
+        
+        var productnamerow =  document.getElementById('productname');
+        productnamerow.innerText = productname
+        var pricerow =  document.getElementById('price');
+        pricerow.innerText = price
+        var quantityrow =  document.getElementById('quantity');
+        quantityrow.innerText = quantity
+        var totalrow =  document.getElementById('total');
+        totalrow.innerText = total
+
+    </script>
+</body>
+</html>
