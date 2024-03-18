@@ -1,0 +1,20 @@
+<classroom>
+<teacher>sir hussan</teacher>
+<student>yousuf</student>
+</classroom>
+
+
+
+
+
+
+<xs:schema>
+<xs:element name= "classroom">
+  <xs:complextype>
+  <xs:sequence>
+ <xs:element name= "teacher" xs:type= "string">sir hussan</xs:element>
+  <xs:element name= "student" xs:type= "string">yousuf</xs:element>
+  </xs:sequence>
+  </xs:complextype>
+</xs:element>
+</xs:schema>
